@@ -13,7 +13,8 @@
     </v-btn>
     <v-btn 
       class="right"
-      color="error">
+      color="error"
+      @click="deleteTodo">
       Delete
     </v-btn>
   </v-card>
@@ -37,8 +38,9 @@ export default class App extends Vue  {
       }
     })
   }
+
+  deleteTodo (): void {
+    Todo.delete(this.todo.id)
+  }
 }
 </script>
-
-<style lang="css">
-</style>
