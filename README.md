@@ -19,12 +19,12 @@ Our team was already able to complete the following:
 - [x] Complete the CRUD features in the GUI and make sure they are reflected in the store
 - [x] Make sure the `todo-list` component dynamically displays the todos
 - [x] Write concise commit messages
-- [ ] Submit your git repository to hr@pangea-technology.com and describe your changes precisely
+- [x] Submit your git repository to hr@pangea-technology.com and describe your changes precisely
 
 ## Bonus
 - [x] Add [Vuex-ORM](https://vuex-orm.github.io/vuex-orm/)
 - [x] Add [TypeScript](https://www.typescriptlang.org/)
-- [ ] Document with [jsDoc](https://devdocs.io/jsdoc/) comments
+- [x] Document with [jsDoc](https://devdocs.io/jsdoc/) comments
 
 ## Please note
 - Pay attention to your code style and structure, don't ignore the eslint hints.
