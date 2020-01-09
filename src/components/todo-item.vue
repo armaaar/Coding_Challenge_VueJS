@@ -7,7 +7,8 @@
         <h3 class="headline mb-0">{{ todo.title }}</h3>
       </div>
     </v-card-title>
-    <v-btn>
+    <v-btn
+      @click="toggleTodoCompletion">
       {{ todo.completed ? 'Undo' : 'Complete' }}
     </v-btn>
     <v-btn 
@@ -27,6 +28,15 @@ import Todo, { TodoType } from '@/models/Todo';
 export default class App extends Vue  {
   @Prop()
   private todo!: TodoType
+
+  toggleTodoCompletion (): void {
+    Todo.update({
+      where: this.todo.id,
+      data: {
+        completed: !this.todo.completed
+      }
+    })
+  }
 }
 </script>
 
