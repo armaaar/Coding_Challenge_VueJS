@@ -33,7 +33,7 @@ import TodoList from '@/components/todo-list.vue'
   }
 })
 export default class App extends Vue {
-  data () {
+  data (): { title: String } {
     return {
       title: 'Vue Todos'
     }
