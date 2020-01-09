@@ -8,7 +8,7 @@ export default class Todo extends Model {
     public id!: any;
  
     @StringField()
-    public name!: string;
+    public title!: string;
  
     @BooleanField(false)
     public completed!: boolean;
@@ -16,6 +16,6 @@ export default class Todo extends Model {
 
 export interface TodoType {
     id: any;
-    name: string;
+    title: string;
     completed: boolean;
 }
